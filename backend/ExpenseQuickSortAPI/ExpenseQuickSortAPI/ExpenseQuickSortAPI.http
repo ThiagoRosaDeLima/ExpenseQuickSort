@@ -1,0 +1,6 @@
+@ExpenseQuickSortAPI_HostAddress = http://localhost:5003
+
+GET {{ExpenseQuickSortAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "ExpenseQuickSortAPI.Controllers.GastosController",
+    "Method": "Listar",
+    "RelativePath": "api/Gastos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ExpenseQuickSortAPI.Controllers.GastosController",
+    "Method": "Adicionar",
+    "RelativePath": "api/Gastos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gasto",
+        "Type": "ExpenseQuickSortAPI.Gasto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
