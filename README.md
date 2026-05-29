@@ -1,55 +1,188 @@
-# 📊 Sistema de Ranking de Gastos Pessoais (Quick Sort Full Stack)
+# ExpenseQuickSort Full Stack
 
-Este projeto foi desenvolvido inicialmente como uma atividade acadêmica para a matéria de **Estrutura de Dados**. A proposta evoluiu de um simples aplicativo de console para uma solução **Full Stack** completa, simulando um cenário real de mercado para demonstrar a aplicação prática do algoritmo de ordenação **Quick Sort** no gerenciamento e ranking de despesas diárias.
+Sistema Full Stack para gerenciamento e organização de gastos pessoais utilizando o algoritmo Quick Sort em C#.
 
----
+O projeto foi desenvolvido como forma de aplicar conceitos de:
 
-## 🚀 Tecnologias Utilizadas
-
-### **Back-end**
-* **C#** com **.NET 10.0**
-* **ASP.NET Core Web API** (Abordagem de Controllers tradicionais, garantindo suporte completo a serialização JSON sem problemas de Trimming/AOT)
-
-### **Front-end**
-* **React** (JavaScript)
-* **Swagger** (Para integração e consumo da API)
-* **HTML5 / CSS3** (Interface limpa, moderna e responsiva)
+* Estrutura de Dados
+* Algoritmos de Ordenação
+* Desenvolvimento Full Stack
+* APIs REST
+* Integração Front-End e Back-End
 
 ---
 
-## 🧠 O Algoritmo: Quick Sort
+# Tecnologias Utilizadas
 
-O núcleo de inteligência da aplicação utiliza o algoritmo **Quick Sort** implementado manualmente em C#. Ele é o responsável por ordenar os gastos cadastrados do **maior para o menor**, permitindo que o sistema gere um ranking preciso de onde o usuário possui o maior impacto financeiro.
+## Front-End
 
-* **Abordagem:** Divisão e Conquista.
-* **Pivô:** Estratégia de posicionamento para particionamento eficiente do array/lista de objetos.
+* React
+* JavaScript
+* HTML5
+* CSS3
+
+## Back-End
+
+* C#
+* ASP.NET Core Web API
+* .NET 8
+
+## Ferramentas
+
+* Git
+* GitHub
+* Visual Studio 2022
+* VS Code
 
 ---
 
-## 🛠️ Arquitetura do Projeto
+# Funcionalidades
 
-O ecossistema do projeto foi estruturado em uma pasta raiz única (`ExpenseQuickSortFull`) dividida entre o servidor e o cliente:
+* Cadastro de gastos
+* Organização automática por valor
+* Ranking do maior gasto para o menor
+* Integração entre React e API C#
+* Algoritmo Quick Sort aplicado na prática
+* Interface moderna e simples
 
-```text
+---
+
+# Estrutura do Projeto
+
+```txt
 ExpenseQuickSortFull/
-├── ExpenseQuickSortAPI/          # Back-end (Web API em C#)
-│   ├── Controllers/             # Endpoints da API (GastosController)
-│   ├── Models/                  # Estrutura do Objeto (Gasto.cs)
-│   ├── Program.cs               # Configuração do Pipeline e CORS
-│   └── ExpenseQuickSortAPI.csproj
-└── expense-frontend/            # Front-end (Single Page Application em React)
-    ├── src/
-    │   ├── App.js               # Componente principal e chamadas de API
-    │   ├── index.js             # Inicialização do React
-    │   └── ...
-    └── package.json
+│
+├── backend/
+│   └── ExpenseQuickSortAPI
+│
+├── frontend/
+│   └── expense-frontend
 ```
-🧑‍💻 Autor
 
-Nome: Thiago Rosa De Lima
+---
 
-Formação: Estudante em Engenharia de Software & Game Design
+# Como Executar o Projeto
 
-Atuação: Desenvolvedor/Programador de Software e Analista de suporte/sistemas
+# 1. Clonar repositório
 
-LinkedIn: https://www.linkedin.com/in/thiagoliez/
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+---
+
+# 2. Executar Back-End
+
+Abrir a pasta:
+
+```txt
+backend/ExpenseQuickSortAPI
+```
+
+Executar:
+
+```bash
+dotnet run
+```
+
+A API será iniciada em:
+
+```txt
+https://localhost:7284
+```
+
+---
+
+# 3. Executar Front-End
+
+Abrir a pasta:
+
+```txt
+frontend/expense-frontend
+```
+
+Executar:
+
+```bash
+npm install
+npm start
+```
+
+O React abrirá em:
+
+```txt
+http://localhost:3000
+```
+
+---
+
+# Como Funciona
+
+O usuário cadastra gastos no Front-End React.
+
+Esses dados são enviados para a API em C# utilizando requisições HTTP.
+
+A API utiliza o algoritmo Quick Sort para ordenar os gastos automaticamente do maior para o menor valor.
+
+Após a ordenação, os dados são retornados para o Front-End e exibidos na interface.
+
+---
+
+# Exemplo
+
+## Entrada
+
+```txt
+Netflix - 39
+Mercado - 350
+Aluguel - 1200
+```
+
+## Saída Ordenada
+
+```txt
+Aluguel - 1200
+Mercado - 350
+Netflix - 39
+```
+
+---
+
+# Conceitos Aplicados
+
+* Estrutura de Dados
+* Algoritmo Quick Sort
+* Programação Orientada a Objetos
+* APIs REST
+* Comunicação Cliente/Servidor
+* Full Stack Development
+
+---
+
+# Melhorias Futuras
+
+* Banco de dados
+* Sistema de login
+* Dashboard financeiro
+* Gráficos de gastos
+* Filtro por categoria
+* Persistência de dados
+* Responsividade mobile
+
+---
+
+# Autor
+
+Thiago Rosa de Lima
+
+LinkedIn:
+https://www.linkedin.com/in/thiagoliez/
+
+GitHub:
+https://github.com/ThiagoRosaDeLima
+
+---
+
+# Status do Projeto
+
+Em desenvolvimento.
